@@ -12,10 +12,12 @@ import AboutUs from "./AboutUs";
 import ForgotPassword from "./ForgotPassword";
 import NotFound from "./NotFound";
 import SwapForm from "./SwapForm";
+
 import PrivateRoute from "./components/PrivateRoute";
 import LogoutButton from "./components/LogoutButton";
 import { useAuth } from "./context/AuthContext";
 
+import Footer from "./Footer"; // ✅ Moved here from components
 import "./App.css";
 
 function App() {
@@ -49,6 +51,7 @@ function App() {
         </nav>
       </div>
 
+      {/* Page Routes */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/browse" element={<PrivateRoute><Browse /></PrivateRoute>} />
@@ -60,6 +63,9 @@ function App() {
         <Route path="/swap" element={<SwapForm />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+
+      {/* ⬇ Footer added globally */}
+      <Footer />
     </Router>
   );
 }
