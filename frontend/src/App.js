@@ -1,3 +1,5 @@
+// File: src/App.js
+
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
@@ -12,12 +14,12 @@ import NotFound from "./NotFound";
 import SwapForm from "./SwapForm";
 import PrivateRoute from "./components/PrivateRoute";
 import LogoutButton from "./components/LogoutButton";
-import { useAuth } from "./context/AuthContext"; 
+import { useAuth } from "./context/AuthContext";
 
 import "./App.css";
 
 function App() {
-  const { user } = useAuth(); // ✅ check auth state
+  const { user } = useAuth();
 
   return (
     <Router>
