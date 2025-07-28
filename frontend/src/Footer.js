@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import { FaInstagram, FaGithub } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -20,17 +20,11 @@ const Footer = () => {
 
         <div className="footer-section">
           <h4>Follow Us</h4>
-          <a href="https://instagram.com/prashant_malaviya_95" target="_blank" rel="noreferrer">
-            <FaInstagram className="icon" /> Prashant
+          <a href="https://github.com/Prashant4050/practice" target="_blank" rel="noreferrer">
+            <FaGithub className="icon" /> Prashant4050
           </a>
-          <a href="https://github.com/prashant-malaviya" target="_blank" rel="noreferrer">
-            <FaGithub className="icon" /> Prashant
-          </a>
-          <a href="https://instagram.com/hettt._03" target="_blank" rel="noreferrer">
-            <FaInstagram className="icon" /> Het
-          </a>
-          <a href="https://github.com/hettt0305" target="_blank" rel="noreferrer">
-            <FaGithub className="icon" /> Het
+          <a href="https://github.com/hetpatel0305/practice" target="_blank" rel="noreferrer">
+            <FaGithub className="icon" /> hetpatel0305
           </a>
         </div>
       </div>
